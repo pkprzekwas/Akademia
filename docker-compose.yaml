@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  server:
+    image: mrupgrade/megafault:latest
+    links:
+     - pg_db
+    ports:
+     - "8000:8000"
+
+  pg_db:
+    image: postgres:9.4
+    ports:
+     - "5432:5432"
