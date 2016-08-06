@@ -1,0 +1,14 @@
+Cool tools:
+    phantom js - headless browser
+    Virtual X11 
+
+
+Rekomendowane materiały do nauki:
+	* Selenium -  http://selenium-python.readthedocs.io/
+	* Xpath - http://www.w3schools.com/xsl/xpath_intro.asp
+	(CSS - brak wyszykiwania po tekscie, brak poruszania się w górę)
+
+Wtyczki FF:
+	* Firebug - console
+	* Firepath
+
