@@ -10,6 +10,14 @@ class BasePage(object):
         field.clear()
         field.send_keys(text)
 
+    def click_submit_btn(self):
+        button = self.find_element_by(LOCATORS.get("submit_button"))
+        button.click()
+
+    def find_element_by(self, locator):
+        element = self._driver.find_element(*locator)
+        return element
+
 
 class Loginator(BasePage):
     def __init__(self, driver):
@@ -25,13 +33,3 @@ class Loginator(BasePage):
         Loginator.fill_in(password_loc, password)
 
         self.click_submit_btn()
-
-    def click_submit_btn(self):
-        button = self.find_element_by(LOCATORS.get("submit_button"))
-        button.click()
-
-    def find_element_by(self, locator):
-        element = self._driver.find_element(*locator)
-        return element
-
-

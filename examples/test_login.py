@@ -4,7 +4,7 @@ from examples.utils import get_browser, get_config
 from examples.loginator import Loginator
 
 
-class testLogin(unittest.TestCase):
+class TestLogin(unittest.TestCase):
     def setUp(self):
         config = get_config()
         browser_name = config.get('browser_name')
