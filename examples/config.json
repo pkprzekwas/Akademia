@@ -1,3 +1,5 @@
 {
-  "browser_name": "Firefox"
+  "browser_name": "Firefox",
+  "page_url": "http://localhost:8000/",
+  "fixtures_path": "users"
 }
